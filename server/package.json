@@ -1,0 +1,26 @@
+{
+  "name": "festify",
+  "version": "1.0.0",
+  "description": "Discover and explore upcoming music festivals",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-kwon/festify.git"
+  },
+  "author": "Matthew Kwon",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.0",
+    "nodemon": "^2.0.12"
+  }
+}
