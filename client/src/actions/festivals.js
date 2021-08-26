@@ -1,4 +1,4 @@
-import { FETCH_FESTS, FETCH_FEST, ATTEND, FAV_FEST, CREATE } from './actionTypes';
+import { FETCH_FESTS, CURRENT_FEST, ATTEND, FAV_FEST, CREATE } from './actionTypes';
 import * as api from '../api';
 
 export const getFestivals = () => async (dispatch) => {
@@ -6,14 +6,14 @@ export const getFestivals = () => async (dispatch) => {
     const { data } = await api.fetchFestivals();
     dispatch({ type: FETCH_FESTS, payload: data });
   } catch (error) {
-    console.log('Failed to fetch festival data: ', error);
+    console.log('Failed to fetch festivals data: ', error);
   }
 }
 
 export const getFestival = (id) => async (dispatch) => {
   try {
     const { data } = await api.fetchFestival(id);
-    dispatch({ type: FETCH_FEST, payload: data });
+    dispatch({ type: CURRENT_FEST, payload: data });
   } catch (error) {
     console.log('Failed to fetch festival data: ', error);
   }

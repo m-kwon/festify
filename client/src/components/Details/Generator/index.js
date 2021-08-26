@@ -3,9 +3,12 @@ import React from 'react';
 import useStyles from './styles';
 
 const Generator = () => {
+
   const classes = useStyles();
   return (
-    <h1>Generator</h1>
+    <div>
+      <button>Spotify</button>
+    </div>
   )
 }
 

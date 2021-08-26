@@ -15,7 +15,7 @@ const FestivalTile = ({ festival }) => {
   const [favorite, setFavorite] = useState(false)
   const dispatch = useDispatch();
 
-  const linkString = `/${festival._id}/details/`;
+  const linkString = `/details/${festival._id}/`;
 
   return (
       <Card className={classes.card}>

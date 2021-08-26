@@ -1,4 +1,4 @@
-import FestivalData from '../models/festival.js';
+import FestivalData from '../../database/models/festival.js';
 import mongoose from 'mongoose';
 
 export const getFestivals = async (req, res) => {
@@ -14,7 +14,7 @@ export const getFestival = async (req, res) => {
   const { id } = req.params;
 
   try {
-    const festivalData = await FestivalData.findOne({ id });
+    const festivalData = await FestivalData.findByIdAndUpdate(id);
     res.status(200).json(festivalData);
   } catch (error) {
     res.status(404).json({ message: error });

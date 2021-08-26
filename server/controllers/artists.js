@@ -1,4 +1,4 @@
-import ArtistData from '../models/artist.js';
+import ArtistData from '../../database/models/artist.js';
 import mongoose from 'mongoose';
 
 export const getArtist = async (req, res) => {

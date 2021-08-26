@@ -4,7 +4,7 @@ import { Container, AppBar, Typography, Grow, Grid, Button } from '@material-ui/
 
 import Festivals from './components/Festivals/';
 import Details from './components/Details/';
-import Form from './components/Form/Form';
+import Form from './components/Form/';
 import festifyimg from './images/logo.png';
 import useStyles from './styles';
 
@@ -30,7 +30,7 @@ const App = () => {
             <Grid item xs={12} sm={12}>
               <Switch>
                 <Route exact path="/" component={Festivals}></Route>
-                <Route exact path="/:id/details" component={Details}></Route>
+                <Route exact path="/details/:id" component={Details}></Route>
               </Switch>
             </Grid>
             <Grid item xs={12} sm={12}>

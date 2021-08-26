@@ -9,3 +9,6 @@ Discover and explore upcoming music festivals
 - transactional consistency is less important than scalability and performance
 
 - using Redux because app has multiple pages and components that will share state
+
+- change URL in "/client/src/api/index.js"
+- change ".env"
