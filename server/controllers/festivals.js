@@ -1,5 +1,5 @@
-import FestivalData from '../../database/models/festival.js';
 import mongoose from 'mongoose';
+import FestivalData from '../../database/models/festival.js';
 
 export const getFestivals = async (req, res) => {
   try {
@@ -42,8 +42,6 @@ export const favoriteFestival = async (req, res) => {
 
   res.json(updatedFestival);
 }
-
-
 
 export const createFestival = async (req, res) => {
   const body = req.body;

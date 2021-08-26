@@ -22,9 +22,9 @@ const Details = () => {
 
   return (
     <div>
-      <BasicInfo festival={festival} />
+      <BasicInfo festival={festival} /><br/>
+      <Generator id={id} /><br/><br/>
       <ArtistList festival={festival} />
-      <Generator />
       <VideoPlayer />
       <RelatedArtists />
     </div>

@@ -13,6 +13,8 @@ export default makeStyles(() => ({
   },
   loginButton: {
     justifyContent: 'right',
+    color: 'red',
+    textDecoration: 'none',
   },
   heading: {
     color: 'orange',

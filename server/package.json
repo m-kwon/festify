@@ -23,6 +23,7 @@
     "express": "^4.17.1",
     "mongoose": "^6.0.0",
     "nodemon": "^2.0.12",
-    "qs": "^6.10.1"
+    "qs": "^6.10.1",
+    "spotify-web-api-node": "^5.0.2"
   }
 }
