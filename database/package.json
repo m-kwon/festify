@@ -1,0 +1,13 @@
+{
+  "name": "festify-db",
+  "version": "1.0.0",
+  "description": "Discover and explore upcoming music festivals",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "mongodb": "^4.1.1",
+    "mongoose": "^6.0.0"
+  }
+}
