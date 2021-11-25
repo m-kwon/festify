@@ -12,9 +12,7 @@ Discover and explore upcoming music festivals
 1. [Start](#Start)
 
 # Overview
-SpotiBot is a web application that leverages the constant stream of new music posted to Reddit and combines it with the listening convenience of Spotify.
-
-SpotiBot aggregates top music posts from user-inputted subreddits, searches for the corresponding songs on Spotify, and then adds the songs to a single Spotify playlist. SpotiBot alleviates the painstaking process of visiting a sundry of different subreddits and clicking through multiple external links just to listen to a song.
+festify is a web application
 
 ![](./client/dist/SpotiBot.gif)
 
@@ -23,18 +21,15 @@ SpotiBot aggregates top music posts from user-inputted subreddits, searches for 
 - React
 - JavaScript
 - Express
-- [Reddit Public API](https://www.reddit.com/dev/api/)
 - [Spotify Web API](https://developer.spotify.com/documentation/web-api/) (Premium Required)
-- [Firestore](https://firebase.google.com/docs/firestore) (Cloud NoSQL Database)
-- [Firebase Authentication](https://firebase.google.com/docs/auth) (User Authentication)
 
 # Installation
-1. Clone down the latest version of SpotiBot from GitHub and navigate to the project directory.
+1. Clone down the latest version of festify from GitHub and navigate to the project directory.
 ```
-$ git clone https://github.com/liamohkay/SpotiBot.git
-$ cd SpotiBot
+$ git clone https://github.com/m-kwon/festify.git
+$ cd festify
 ```
-2. Using install project dependencies inside the SpotiBot directory.
+2. Using install project dependencies inside the festify directory.
 ```
 $ npm install
 ```
@@ -58,23 +53,7 @@ module.exports = {
 
 4. Rename `/server/spotifyConfig-ex.js` to `/server/spotifyConfig.js`. Renaming the file will cause it to become gitignored and is the correct filepath for the express server to import your Spotify configuration.
 
-## Firebase/Firestore
-1. Sign up for a [Firebase](https://firebase.google.com/) account and create a new project.
 
-2. Add Firebase to your web app and copy and paste the Firebase SDK configuration settings to `/client/src/firebase/fbConfig-ex.js`
-```
-// Firebase + Firestore SDK config
-const firebaseConfig = {
-  apiKey: "FILL_ME_IN",
-  authDomain: "FILL_ME_IN",
-  projectId: "FILL_ME_IN",
-  storageBucket: "FILL_ME_IN",
-  messagingSenderId: "FILL_ME_IN",
-  appId: "FILL_ME_IN"
-};
-```
-
-3.  Rename `/client/src/firebase/fbConfig-ex.js` to `/client/src/firebase/fbConfig.js`. Renaming the file will cause it to become gitignored and is the correct filepath for the front-end to import your Firebase configuration.
 
 # Start
 1. Compile the project build.
