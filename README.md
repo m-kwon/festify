@@ -12,7 +12,7 @@ Discover and explore upcoming music festivals
 1. [Start](#Start)
 
 # Overview
-festify is a web application
+festify is a web application that allows users to build Spotify playlists based on upcoming music festivals
 
 ![](./client/dist/SpotiBot.gif)
 
